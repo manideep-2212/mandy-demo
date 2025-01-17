@@ -6,15 +6,14 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+    overflow:scroll;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica', sans-serif;
     margin-bottom: 20px;
 }
-h3{
-    font-size:18px;
-}
+
 p {
     margin: 0 0 15px;
 }
@@ -46,7 +45,6 @@ p {
     border-radius: 5px;
     box-shadow: 0 0 5px #0ff, 0 0 15px #0ff, 0 0 20px #0ff;
     transition: all 0.4s ease;
-    margin-top:10px;
 }
 
 .btn-neon:hover {
@@ -91,11 +89,9 @@ p {
 
 .boxes {
     background-color: #ffffff;
-    height:60vh;
-    width:50vw;
     padding: 20px;
     border-radius: 10px;
-    margin:20px;
+    margin-bottom: 20px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
@@ -105,18 +101,181 @@ p {
 }
 
 .image-edit {
-    border-radius: 10%;
-    height:10vh;
-    width:40vw;
+    border-radius: 5%;
     display: block;
     margin: 10px auto 0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-#navbar_styles{
-    font-size:16px;
-    font-style:"Caveat";
-    font-weight:200px;
+#sectionSkills {
+    background-color: #f8f9fa; /* Light background for a clean look */
+    padding: 50px 0; /* Add padding to the top and bottom of the section */
 }
+
+#sectionSkills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #343a40; /* Dark text color */
+}
+
+.d-flex.flex-column {
+    align-items: center;
+}
+
+.d-flex.flex-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add spacing between skill items */
+}
+
+.dabba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    margin-right: 15px; /* Space between icon and text */
+    background-color: #e9ecef; /* Light gray background for icons */
+    border-radius: 50%; /* Make icons circular */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    padding: 10px;
+}
+
+.dabba img {
+    width: 40px;
+    height: 40px; /* Icon size */
+    object-fit: contain;
+}
+
+h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #495057; /* Slightly dark text for skills */
+}
+.text-alignment{
+    text-align:left;
+}
+.boxes2{
+    background-color: #020202;
+    padding: 20px;
+    border-radius: 10px;
+    border-style:solid;
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* General Styling for Projects Section */
+#sectionProjects {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 50px 0; /* Add spacing at the top and bottom */
+}
+
+#sectionProjects h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #343a40; /* Dark text for better readability */
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Styling for Project Boxes */
+.boxes-2 {
+    background-color: #fff; /* White background for contrast */
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+    margin: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.boxes-2:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Add shadow on hover */
+}
+
+/* Add consistent spacing for project content */
+.boxes-2 .d-flex {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.boxes-2 img {
+    max-width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px; /* Rounded corners for images */
+}
+
+.boxes-2 h4 {
+    font-size: 1.2rem;
+    color: #343a40; /* Dark text for titles */
+    margin-bottom: 5px;
+}
+
+.boxes-2 p {
+    font-size: 0.9rem;
+    color: #6c757d; /* Light gray for descriptions */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .boxes-2 {
+        text-align: center; /* Center align for smaller screens */
+    }
+    .boxes-2 img {
+        margin: 0 auto 15px auto; /* Center images */
+    }
+}
+#sectionContactInfo {
+    padding: 50px 0;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#sectionContactInfo .dabba {
+    font-size: 30px;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+#sectionContactInfo h4 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 5px;
+}
+
+#sectionContactInfo .d-flex {
+    margin-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+#sectionContactInfo a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#sectionContactInfo a:hover {
+    text-decoration: underline;
+}
+
+#sectionContactInfo i {
+    font-size: 24px;
+    color: #007bff;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .navbar-nav {
